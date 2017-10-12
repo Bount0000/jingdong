@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <com.stx.xhb.xbanner.XBanner
+        android:id="@+id/xbanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:AutoPlayTime="3000"
+        app:pointsContainerBackground="#44AAAAAA"
+        app:pointsPosition="CENTER"
+        app:tipTextColor="#FFFFFFFF"
+        app:tipTextSize="16.0sp">
+    </com.stx.xhb.xbanner.XBanner>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/xbanner" />
+
+    <LinearLayout
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:layout_below="@+id/lt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_below="@+id/iv"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:src="@mipmap/miaosha"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_miaocha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:background="#F5F5F5"
+        android:orientation="vertical"
+        android:layout_below="@+id/lt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_below="@+id/iv"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:src="@mipmap/tuijian"
+            />
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
